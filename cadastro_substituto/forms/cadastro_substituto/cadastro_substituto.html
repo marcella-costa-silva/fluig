@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	</head>
+
+	<body class="fluig-style-guide">
+		<form name="form" role="form">
+
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="nm_substituido">Login do Substituído <span style="color: red;">*</span></label>
+						<input type="text" class="form-control" id="nm_substituido" name="nm_substituido">
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="nm_substituto">Login do Substituto <span style="color: red;">*</span></label>
+						<input type="text" class="form-control" id="nm_substituto" name="nm_substituto">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="dt_inicio">Data de Início <span style="color: red;">*</span></label>
+						<input type="text" class="form-control" id="dt_inicio" name="dt_inicio">
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="dt_fim">Data Fim <span style="color: red;">*</span></label>
+						<input type="text" class="form-control" id="dt_fim" name="dt_fim">
+					</div>
+				</div>
+			</div>
+
+		</form>
+
+		<script>
+			var dt_inicio = FLUIGC.calendar('#dt_inicio');
+			var dt_fim = FLUIGC.calendar('#dt_fim');
+		</script>
+	</body>
+</html>
